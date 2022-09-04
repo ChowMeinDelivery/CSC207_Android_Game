@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Everside Adventures</string>
+    <string name="button_send">Confirm</string>
+    <string name="game_start">Start game</string>
+    <string name="empty_save">Empty</string>
+    <string name="save_slots">Save slots</string>
+    <string name="edit_name">Enter your desired username (max 9 characters)</string>
+    <string name="game_level2">Level 2</string>
+    <string name="player_health">Health: %1$s</string>
+    <string name="player_score">Score: %1$s</string>
+    <string name="no_player">No player selected</string>
+    <string name="edit_slot">Edit preferences</string>
+    <string name="delete_slot">Delete slot</string>
+    <string name="set_hard">Hard</string>
+    <string name="set_normal">Normal</string>
+    <string name="set_easy">Easy</string>
+    <string name="set_knight">Knight</string>
+    <string name="set_rogue">Rogue</string>
+    <string name="set_day">Day</string>
+    <string name="set_night">Night</string>
+    <string name="finish_key">Finish</string>
+    <string name="text_scene">Scene:</string>
+    <string name="text_difficulty">Difficulty:</string>
+    <string name="text_character">Character:</string>
+    <string name="toggle_scene">Toggle Between Night/Day:</string>
+    <string name="toggle_character">Toggle Between Characters:</string>
+    <string name="level2_instructions">You can now jump! Tap the screen to start the game.</string>
+    <string name="lose_message">You died!</string>
+</resources>

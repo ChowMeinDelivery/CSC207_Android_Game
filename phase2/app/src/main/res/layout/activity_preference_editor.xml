@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BackendStorage.PreferenceEditor" >
+
+    <Button
+        android:id="@+id/end2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="clickFinish"
+        android:text="@string/finish_key" />
+
+    <ImageView
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/day"
+        android:contentDescription="@string/set_day"
+        app:srcCompat="@drawable/day" />
+
+    <ImageView
+        android:id="@+id/night"
+        android:layout_width="787dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/night"
+        android:contentDescription="@string/set_night"
+        app:srcCompat="@drawable/night" />
+
+    <TextView
+        android:id="@+id/dn"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginBottom="291dp"
+        android:background="#726A6A"
+        android:backgroundTint="#292828"
+        android:backgroundTintMode="add"
+        android:text="@string/toggle_scene"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Switch
+        android:id="@+id/daynight"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="435dp"
+        android:layout_marginBottom="256dp"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:onClick="clickDaySwitch"
+        android:showText="false"
+        android:splitTrack="true"
+        android:textOff="@string/set_night"
+        android:textOn="@string/set_day" />
+
+    <TextView
+        android:id="@+id/dn3"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="265dp"
+        android:layout_marginBottom="122dp"
+        android:background="#726A6A"
+        android:backgroundTint="#292828"
+        android:backgroundTintMode="add"
+        android:text="@string/toggle_character"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Switch
+        android:id="@+id/cswitch"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="437dp"
+        android:layout_marginBottom="87dp"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:onClick="clickCharSwitch"
+        android:showText="false"
+        android:splitTrack="true"
+        android:textOff="@string/set_night"
+        android:textOn="@string/set_day" />
+
+    <TextView
+        android:id="@+id/dif"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="292dp"
+        android:background="#726A6A"
+        android:backgroundTint="#292828"
+        android:backgroundTintMode="add"
+        android:text="@string/text_difficulty"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="133dp"
+        android:baselineAligned="false">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#726A6A"
+            android:onClick="clickEasy"
+            android:text="@string/set_easy"
+            android:textColor="#F1ECEC"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="75dp"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#726A6A"
+            android:onClick="clickNormal"
+            android:text="@string/set_normal"
+            android:textColor="#F1ECEC"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="93dp"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#726A6A"
+            android:checked="true"
+            android:onClick="clickHard"
+            android:text="@string/set_hard"
+            android:textColor="#F1ECEC"
+            android:textColorHighlight="#C8FF8F00"
+            android:textColorLink="#F9A825"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="87dp"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="349dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="159dp"
+        android:background="#726A6A"
+        android:text="@string/set_knight"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/hero"
+        android:layout_width="181dp"
+        android:layout_height="183dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="549dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/run1" />
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nbg"
+    android:clickable="true"
+    android:onClick="runIntro"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/vegetation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/forestd" />
+
+    <ImageView
+        android:id="@+id/vegetation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/forestd" />
+
+    <ImageView
+        android:id="@+id/grass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hills_layer_5" />
+
+    <ImageView
+        android:id="@+id/grass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/hills_layer_5" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/hero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="161dp"
+        android:src="@drawable/run2"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/t1"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/t2"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/t3"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/t4"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/t5"
+        android:layout_width="769dp"
+        android:layout_height="352dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/t5" />
+
+    <ImageView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="startGame"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/t6"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="738dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:onClick="runIntro"
+        android:visibility="visible"
+        app:srcCompat="@drawable/main_bg"
+        tools:visibility="visible" />
+
+</RelativeLayout>

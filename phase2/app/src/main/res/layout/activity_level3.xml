@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lvl3d"
+    tools:context=".Level3Game.Level3Activity">
+
+    <TextView
+        android:id="@+id/pstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:text="Incorrect Pattern !"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/keybutton"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/potion1"
+        android:onClick="useBonusKey"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/magic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="287dp"
+        android:layout_marginBottom="33dp"
+        android:text="Use Magic Key to Unlock"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/hero"
+        android:layout_width="146dp"
+        android:layout_height="144dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="131dp"
+        app:srcCompat="@drawable/hero1" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/b3"
+        android:clickable="false"
+        android:enabled="false"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/b1"
+        android:clickable="false"
+        android:enabled="false"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/b4"
+        android:clickable="false"
+        android:enabled="false"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/b2"
+        android:clickable="false"
+        android:enabled="false"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="98dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Score"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/health"
+        android:layout_width="98dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Health"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/potions"
+        android:layout_width="98dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="61dp"
+        android:text="Potions"
+        android:textSize="14sp" />
+
+</RelativeLayout>
